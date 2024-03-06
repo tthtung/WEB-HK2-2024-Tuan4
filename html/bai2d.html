@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        [class*=col] {
+            padding: 0px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="was-validated ">
+                    <div class="form-row">
+                        <div class="form-group col-4 ">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname" class="form-control is-valid " placeholder=""
+                                value="Mark" required>
+                            <div class="valid-feedback ">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group col-4 ">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="lname" id="lname" class="form-control is-valid " placeholder=""
+                                value="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group col-4 ">
+
+                            <label for="user">User name</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" class="form-control is-invalid " id="inlineFormInputGroup"
+                                    placeholder="Username" aria-describedby="feedBack" required>
+                                <div id="feedBack" class="invalid-feedback">
+                                    Please choosen a username.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-6 ">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" class="form-control is-invalid " placeholder="City"
+                                aria-describedby="city_fb" required>
+                            <div id="city_fb" class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="form-group col-3 ">
+                            <label for="state">State</label>
+                            <input type="text" name="state" id="state" class="form-control is-invalid " placeholder="State"
+                                aria-describedby="state_fb" required>
+                            <div id="state_fb" class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="form-group col-3 ">
+                            <label for="zip">Zip</label>
+                            <input type="text" name="zip" id="zip" class="form-control is-invalid " placeholder="Zip"
+                                aria-describedby="zip_fb" required>
+                            <div id="state_fb" class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="form-check ">
+                            <input id="agree" class="form-check-input" type="checkbox" name="agree" value="true" required>
+                            <label for="agree" class="form-check-label">Agree to terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
